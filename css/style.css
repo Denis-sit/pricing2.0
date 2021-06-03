@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Proxima Nova Condensed Bold";
+    src:local("Proxima Nova Condensed Bold"), 
+     url("../Proxima/Bold/ProximaNovaCond-Bold.ttf"),
+     url("../Proxima/Bold/ProximaNovaCond-Bold.eot"),
+     url("../Proxima/Bold/ProximaNovaCond-Bold.otf"),
+     url("../Proxima/Bold/ProximaNovaCond-Bold.woff"),
+     url("../Proxima/Bold/ProximaNovaCond-Bold.woff2"),
+     url("../Proxima/Bold/ProximaNovaCondBold.woff");
+}
+
+@font-face {
+    font-family:"Proxima Nova Condensed Regular";
+    src:local("Proxima Nova Condensed Regular"),
+    url("../Proxima/Regular/ProximaNovaCond-Regular.eot"),
+    url("../Proxima/Regular/ProximaNovaCond-Regular.ttf"),
+    url("../Proxima/Regular/ProximaNovaCond-Regular.woff"),
+    url("../Proxima/Regular/ProximaNovaCond-Regular.woff2");
+}
+
+@font-face {
+    font-family:"Proxima Nova Condensed Extrabld";
+    src: local("Proxima Nova Condensed Extrabld"),
+     url("../Proxima/ExBold/ProximaNovaCond-Extrabld.ttf"),
+     url("../Proxima/ExBold/ProximaNovaCond-Extrabld.eot"),
+     url("../Proxima/ExBold/ProximaNovaCond-Extrabld.woff"),
+     url("../Proxima/ExBold/ProximaNovaCond-Extrabld.woff2"),
+     url("../Proxima/ExBold/ProximaNovaCond-ExtrabldIt.eot"),
+     url("../Proxima/ExBold/ProximaNovaCond-ExtrabldIt.woff"),
+     url("../Proxima/ExBold/ProximaNovaCond-ExtrabldIt.woff2"),
+     url("../Proxima/ExBold/ProximaNovaCond-ExtrabldIt.ttf");
+}
+
+@font-face {
+    font-family:"Proxima Nova Condensed Black" ;
+    src: local("Proxima Nova Condensed Black"),
+     url("../Proxima/Black/ProximaNovaCond-Black.eot"),
+     url("../Proxima/Black/ProximaNovaCond-Black.otf"),
+     url("../Proxima/Black/ProximaNovaCond-Black.ttf"),
+     url("../Proxima/Black/ProximaNovaCond-Black.woff"),
+     url("../Proxima/Black/ProximaNovaCond-Black.woff2"),
+     url("../Proxima/Black/ProximaNovaCondBlack.woff");
+}
+
+@font-face {
+    font-family:"Proxima Nova Condensed ExBlack" ;
+    src: local("Proxima Nova Condensed ExBlack"),
+     url("../Proxima/ExBlack/ProximaNovaExCn-Black.otf"),
+     url("../Proxima/ExBlack/ProximaNovaExCn-Black.ttf"),
+     url("../Proxima/ExBlack/ProximaNovaExCn-Black.woff"),
+     url("../Proxima/ExBlack/ProximaNovaExCn-Black.woff2");
+}
+/* стили для мобильной версии */
+body{
+    font-family: Arial, sans-serif;
+
+}
+
+h2 {
+    font-family: Proxima Nova Condensed ExBlack;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.cards-rate{
+    padding: 30px 20px 30px 21px;
+    border-radius: 8px;
+    border: 1px solid #D4EAFF;
+    margin-bottom: 30px;
+}
+
+
+.top{
+    border: none;
+    background: linear-gradient(180deg, #E8EEFF 0%, #C2F6FF 100%), #F9FBFF;
+    margin-top: 30px;
+}
+
+.rate{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    font-family:Proxima Nova Condensed Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50%;
+    background-color: #D4EAFF;
+}
+
+.white{
+    background-color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-title{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 16px;
+    margin-right: auto;
+}
+
+ul{
+    margin-top: 36px;
+}
+
+li{
+    padding-left: 16px;
+    background: url("../img/group.svg") no-repeat;
+    background-position: 2px 6px;
+    margin-bottom:8px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+li img{
+    vertical-align: middle;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+
+.full-price{
+    font-family: Proxima Nova Condensed Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.price-month{
+    font-family: Proxima Nova Condensed Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+button{
+    appearance: none;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #E8178A;
+    color: #E8178A;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 9px;
+    height: 46px;
+    width: 120px;
+}
+
+.red{
+    background-color: #E8178A;
+    color: white;
+}
+
+.individual{
+    display: flex;
+    flex-direction: column;
+}
+
+.individual-info{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.circle{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #D4EAFF;
+    margin-bottom: 15px;
+}
+
+.individual-title{
+    padding-left: 16px;
+    line-height: 45px;
+}
+
+.individual-button{
+    width: 227px;
+    margin-top:60px;
+    align-self: center;
+}
+/* Конец стилей мобильной версии */
+
+@media screen and (min-width:510px){
+    .wrapper-main-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .price{
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    button{
+        margin-top: 17px;
+    }
+
+    .wrapper-price{
+        margin-left: 24px;
+    }
+}    
