@@ -170,6 +170,7 @@ button{
     margin-left: 9px;
     height: 46px;
     width: 120px;
+    cursor: pointer;
 }
 
 .red{
@@ -229,4 +230,190 @@ button{
     .wrapper-price{
         margin-left: 24px;
     }
+}    
+
+@media screen and (max-width:1000px){
+    .pc-version{
+        display: none;
+    }
+    
+}
+
+@media  screen and (min-width:1000px){
+    .mobile-version{
+        display: none;
+    }
+    
+    .pc-version{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .container-pc{
+        display: flex;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    
+    .services{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #D4EAFF;
+        border-radius: 8px;
+    }
+
+    .services:first-child{
+        border-right: none;
+        border-radius:8px 0 0 8px ;
+    }
+
+    .services:nth-child(2){
+        margin-right: 230px;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .services:nth-child(3){
+        position: absolute;
+        left: 456px;
+        bottom:-23px;
+        background: linear-gradient(180deg, #E8EEFF 0%, #C2F6FF 100%), #F9FBFF;
+    }
+
+    .services:last-child{
+        border-left: none;
+        border-radius: 0 8px 8px 0;
+        margin-left: 0;
+    }
+
+    .name{
+        display: flex;
+        align-items: center;
+        height: 70px;
+        width: 230px;
+        box-sizing: border-box;
+        padding: 0 37px 0 22px;
+        border-bottom:1px solid #D4EAFF;
+    }
+
+     .services:nth-child(3) .name{
+         width: 241px;
+     }
+
+    .centering{
+        justify-content: center;
+        text-align: center;
+        padding: 0px 51px 0 53px;
+    }
+
+    .servise-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 164px;
+        width: 230px;
+        box-sizing: border-box;
+        padding: 0 10px 0 10px;
+    }
+    
+    .services:nth-child(3) .servise-name{
+        height: 181px;
+        width: 241px;
+    }
+
+    .servise-name p:first-child{
+        font-family: Proxima Nova Condensed Regular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;  
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom:15px ;
+    }
+
+    .servise-name p:last-child{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .lower-bound{
+        border-bottom: 1px solid #D4EAFF;
+    }
+
+    .name p{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .name img{
+        vertical-align: middle;
+    }
+
+    .container-price{
+        height: 165px;
+        border-bottom: none;
+    }
+
+    .services:nth-child(3) .container-price{
+        height: 188px;
+    }
+
+    .name .full-price{
+        font-family: Proxima Nova Condensed Regular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 22px;
+    }
+    
+    .name .price-month{
+        font-family: Proxima Nova Condensed Regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+   .services:nth-child(2) .name .full-price{
+       margin-bottom: 20px;
+   }
+   
+    .services:nth-child(3) button{
+        background: #E8178A;
+        color: white;
+        margin-bottom: 25px;
+    }
+
+   .individual{
+       width: 930px;
+       flex-direction: row;
+       justify-content: space-between;
+       box-sizing: border-box;
+   }
+    
+    .individual-info{
+       width: 457px;
+    }
+
+    .individual-button{
+        align-self: flex-start;
+        margin-top: 0;
+    }
+
 }    
