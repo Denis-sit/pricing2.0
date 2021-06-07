@@ -57,7 +57,7 @@ body{
 }
 
 h2 {
-    font-family: Proxima Nova Condensed ExBlack;
+    font-family: Proxima Nova Condensed ExBlack , sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -83,7 +83,7 @@ h2 {
     display: inline-block;
     width: 46px;
     height: 46px;
-    font-family:Proxima Nova Condensed Regular;
+    font-family:Proxima Nova Condensed Regular , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -141,7 +141,7 @@ li img{
 }
 
 .full-price{
-    font-family: Proxima Nova Condensed Regular;
+    font-family: Proxima Nova Condensed Regular , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -149,7 +149,7 @@ li img{
 }
 
 .price-month{
-    font-family: Proxima Nova Condensed Regular;
+    font-family: Proxima Nova Condensed Regular , sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -259,35 +259,34 @@ button{
     .container-pc{
         display: flex;
         margin-bottom: 50px;
-        position: relative;
     }
     
     .services{
         display: flex;
+        height: 889px;
         flex-direction: column;
         border: 1px solid #D4EAFF;
         border-radius: 8px;
     }
 
-    .services:first-child{
+    .one{
         border-right: none;
         border-radius:8px 0 0 8px ;
     }
 
-    .services:nth-child(2){
-        margin-right: 230px;
+    .two{
         border-right: none;
         border-radius: 0;
     }
 
-    .services:nth-child(3){
-        position: absolute;
-        left: 456px;
-        bottom:-23px;
+    .three{
+        position: relative;
+        height: 929px;
+        top: -17px;
         background: linear-gradient(180deg, #E8EEFF 0%, #C2F6FF 100%), #F9FBFF;
     }
 
-    .services:last-child{
+    .four{
         border-left: none;
         border-radius: 0 8px 8px 0;
         margin-left: 0;
@@ -299,11 +298,11 @@ button{
         height: 70px;
         width: 230px;
         box-sizing: border-box;
-        padding: 0 37px 0 22px;
+        padding: 0 32px 0 22px;
         border-bottom:1px solid #D4EAFF;
     }
 
-     .services:nth-child(3) .name{
+     .three .name{
          width: 241px;
      }
 
@@ -324,13 +323,13 @@ button{
         padding: 0 10px 0 10px;
     }
     
-    .services:nth-child(3) .servise-name{
+    .three .servise-name{
         height: 181px;
         width: 241px;
     }
 
     .servise-name p:first-child{
-        font-family: Proxima Nova Condensed Regular;
+        font-family: Proxima Nova Condensed Regular , sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 22px;
@@ -370,12 +369,12 @@ button{
         border-bottom: none;
     }
 
-    .services:nth-child(3) .container-price{
+    .three .container-price{
         height: 188px;
     }
 
     .name .full-price{
-        font-family: Proxima Nova Condensed Regular;
+        font-family: Proxima Nova Condensed Regular , sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -383,7 +382,7 @@ button{
     }
     
     .name .price-month{
-        font-family: Proxima Nova Condensed Regular;
+        font-family: Proxima Nova Condensed Regular , sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
