@@ -51,10 +51,11 @@
      url("../Proxima/ExBlack/ProximaNovaExCn-Black.woff2");
 }
 /* стили для мобильной версии */
-body{
-    font-family: Arial, sans-serif;
 
-}
+body{
+    background: linear-gradient(180deg, #D3F1FF -21.51%, rgba(236, 242, 255, 0) 79.85%);
+    background-repeat: no-repeat;
+} 
 
 h2 {
     font-family: Proxima Nova Condensed ExBlack , sans-serif;
@@ -63,6 +64,148 @@ h2 {
     font-size: 32px;
     line-height: 34px;
     text-align: center;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 23px;
+}
+
+.nav-button{
+    width: 138px;
+    height: 30px;
+    border: 1px solid #C5E0FF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 10px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-button:active{
+    color: white;
+    background: #E8178A;
+}
+
+.question,
+.system-surveys{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;  
+    text-align: center;
+    margin-top: 23px;
+}
+
+.slider-card{
+    overflow: hidden;
+}
+
+.section-card{
+     width: 1500px;
+     margin-top: 16px;
+     display: flex;
+     position: relative;
+}
+
+.section-card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 240px;
+    height: 289px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 20px;
+    padding: 23px 10px 19px 23px;
+}
+
+.card-title{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card-info{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card-job{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.second-title{
+    margin-top: 62px;
+}
+
+.system-surveys{
+    line-height: 21px;
+    margin-top: 16px;
+}
+
+.img-second-title {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.img-second-title img{
+   width: 85%;
+   height: auto;
+}
+
+dl {
+    margin-left: 10%;
+   margin-top: 69px;
+}
+
+dt {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 31px;
+}
+
+dd {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.pricing{
+    margin-top: 75px;
 }
 
 .cards-rate{
@@ -156,7 +299,7 @@ li img{
     line-height: 22px;
 }
 
-button{
+.button{
     appearance: none;
     background: white;
     border-radius: 3px;
@@ -210,6 +353,61 @@ button{
     margin-top:60px;
     align-self: center;
 }
+
+.designer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #290A54;
+    background-image:  url("../img/hh.svg"),url("../img/star.svg");
+    background-repeat: no-repeat;
+    background-position: 172px 372px , 50px 369px;
+    height: 506px;
+}
+
+.designer h2{
+    color: white;
+    margin-top: 50px;
+}
+
+.designer p{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: white;
+    margin-top: 17px;
+}
+
+.designer-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.designer-button-item{
+    appearance: none;
+    width:288px;
+    height: 46px;
+    border-radius: 3px;
+}
+
+.to-try{
+    background: #E8178A;
+    color: white;
+    border: none;
+}
+
+.demo{
+    background: #290A54;
+    color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+}
 /* Конец стилей мобильной версии */
 
 @media screen and (min-width:510px){
@@ -240,6 +438,10 @@ button{
 }
 
 @media  screen and (min-width:1000px){
+    body{
+        background: white;
+    }
+
     .mobile-version{
         display: none;
     }
