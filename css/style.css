@@ -394,6 +394,7 @@ li img{
     width:288px;
     height: 46px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .to-try{
