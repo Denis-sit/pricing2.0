@@ -66,14 +66,14 @@ h2 {
     text-align: center;
 }
 
-.navigation{
+.advice-block__nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 23px;
 }
 
-.nav-button{
+.advice-block__nav-button{
     width: 138px;
     height: 30px;
     border: 1px solid #C5E0FF;
@@ -90,12 +90,12 @@ h2 {
     cursor: pointer;
 }
 
-.nav-button:active{
+.advice-block__nav-button:active{
     color: white;
     background: #E8178A;
 }
 
-.question,
+.advice-block__text_question,
 .system-surveys{
     font-family: Arial;
     font-style: normal;
@@ -106,18 +106,18 @@ h2 {
     margin-top: 23px;
 }
 
-.slider-card{
+.advice-block__slider{
     overflow: hidden;
 }
 
-.section-card{
+.advice-block__tape-slider{
      width: 1500px;
      margin-top: 16px;
      display: flex;
      position: relative;
 }
 
-.section-card-item{
+.advice-block__slider__card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -131,7 +131,7 @@ h2 {
     padding: 23px 10px 19px 23px;
 }
 
-.card-title{
+.advice-block__slider__card-title{
     font-family: Arial;
     font-style: normal;
     font-weight: bold;
@@ -139,7 +139,7 @@ h2 {
     line-height: 24px;
 }
 
-.card-info{
+.advice-block__slider__card-info{
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -147,7 +147,7 @@ h2 {
     line-height: 21px;
 }
 
-.card-job{
+.advice-block__slider__button{
     font-family: Arial;
     font-style: normal;
     font-weight: bold;
@@ -158,16 +158,16 @@ h2 {
     color: black;
 }
 
-.second-title{
+.survey-block{
     margin-top: 62px;
 }
 
-.system-surveys{
+.survey-block__text{
     line-height: 21px;
     margin-top: 16px;
 }
 
-.img-second-title {
+.survey-block__img {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -204,11 +204,11 @@ dd {
     margin-top: 8px;
 }
 
-.pricing{
+.block-rate{
     margin-top: 75px;
 }
 
-.cards-rate{
+.block-rate__item{
     padding: 30px 20px 30px 21px;
     border-radius: 8px;
     border: 1px solid #D4EAFF;
@@ -216,13 +216,20 @@ dd {
 }
 
 
-.top{
+.block-rate__item_background{
     border: none;
     background: linear-gradient(180deg, #E8EEFF 0%, #C2F6FF 100%), #F9FBFF;
     margin-top: 30px;
 }
 
-.rate{
+.block-rate__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.block-rate__name-tariff{
     display: inline-block;
     width: 46px;
     height: 46px;
@@ -237,17 +244,11 @@ dd {
     background-color: #D4EAFF;
 }
 
-.white{
+.block-rate__name-tariff_bg-white{
     background-color: white;
 }
 
-.info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info-title{
+.block-rate__title{
     font-family: Arial;
     font-style: normal;
     font-weight: bold;
@@ -277,13 +278,13 @@ li img{
     vertical-align: middle;
 }
 
-.price{
+.block-rate__price{
     display: flex;
     justify-content: space-between;
     margin-top: 39px;
 }
 
-.full-price{
+.block-rate__full-price{
     font-family: Proxima Nova Condensed Regular , sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -291,7 +292,7 @@ li img{
     line-height: 22px;
 }
 
-.price-month{
+.block-rate__price-month{
     font-family: Proxima Nova Condensed Regular , sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -299,7 +300,7 @@ li img{
     line-height: 22px;
 }
 
-.button{
+.block-rate__button{
     appearance: none;
     background: white;
     border-radius: 3px;
@@ -316,17 +317,17 @@ li img{
     cursor: pointer;
 }
 
-.red{
+.block-rate__button_red{
     background-color: #E8178A;
     color: white;
 }
 
-.individual{
+.block-rate__item_individual{
     display: flex;
     flex-direction: column;
 }
 
-.individual-info{
+.block-rate__info-individual{
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -334,7 +335,7 @@ li img{
     line-height: 20px;
 }
 
-.circle{
+.block-rate__circle{
     display: inline-block;
     width: 46px;
     height: 46px;
@@ -343,12 +344,12 @@ li img{
     margin-bottom: 15px;
 }
 
-.individual-title{
+.block-rate__title-individual{
     padding-left: 16px;
     line-height: 45px;
 }
 
-.individual-button{
+.block-rate__button_individual{
     width: 227px;
     margin-top:60px;
     align-self: center;
@@ -382,14 +383,14 @@ li img{
     margin-top: 17px;
 }
 
-.designer-button{
+.designer__button{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 }
 
-.designer-button-item{
+.designer__button__item{
     appearance: none;
     width:288px;
     height: 46px;
@@ -397,13 +398,13 @@ li img{
     cursor: pointer;
 }
 
-.to-try{
+.designer__button__item_to-try{
     background: #E8178A;
     color: white;
     border: none;
 }
 
-.demo{
+.designer__button__item_demo{
     background: #290A54;
     color: white;
     border: 1px solid white;
@@ -412,21 +413,21 @@ li img{
 /* Конец стилей мобильной версии */
 
 @media screen and (min-width:510px){
-    .wrapper-main-info{
+    .block-rate__main-info{
         display: flex;
         justify-content: space-between;
     }
     
-    .price{
+    .block-rate__price{
         flex-direction: column;
         justify-content: end;
     }
 
-    button{
+    .block-rate__button{
         margin-top: 17px;
     }
 
-    .wrapper-price{
+    .block-rate__wrapper{
         margin-left: 24px;
     }
 }    
@@ -464,7 +465,7 @@ li img{
         margin-bottom: 50px;
     }
     
-    .services{
+    .container-pc__rate{
         display: flex;
         height: 889px;
         flex-direction: column;
@@ -472,30 +473,30 @@ li img{
         border-radius: 8px;
     }
 
-    .one{
+    .container-pc__rate_advantages{
         border-right: none;
         border-radius:8px 0 0 8px ;
     }
 
-    .two{
+    .container-pc__rate_xs{
         border-right: none;
         border-radius: 0;
     }
 
-    .three{
+    .container-pc__rate_m{
         position: relative;
         height: 929px;
         top: -17px;
         background: linear-gradient(180deg, #E8EEFF 0%, #C2F6FF 100%), #F9FBFF;
     }
 
-    .four{
+    .container-pc__rate_l{
         border-left: none;
         border-radius: 0 8px 8px 0;
         margin-left: 0;
     }
 
-    .name{
+    .advantages__name{
         display: flex;
         align-items: center;
         height: 70px;
@@ -505,17 +506,17 @@ li img{
         border-bottom:1px solid #D4EAFF;
     }
 
-     .three .name{
+     .container-pc__rate_m .advantages__name{
          width: 241px;
      }
 
-    .centering{
+    .advantages__name_centering{
         justify-content: center;
         text-align: center;
         padding: 0px 51px 0 53px;
     }
 
-    .servise-name{
+    .container-pc__servise-name{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -526,12 +527,12 @@ li img{
         padding: 0 10px 0 10px;
     }
     
-    .three .servise-name{
+    .container-pc__rate_m .container-pc__servise-name{
         height: 181px;
         width: 241px;
     }
 
-    .servise-name p:first-child{
+    .container-pc__servise-name p:first-child{
         font-family: Proxima Nova Condensed Regular , sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -542,7 +543,7 @@ li img{
         margin-bottom:15px ;
     }
 
-    .servise-name p:last-child{
+    .container-pc__servise-name p:last-child{
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
@@ -551,11 +552,11 @@ li img{
         text-align: center;
     }
 
-    .lower-bound{
+    .container-pc__servise-name_lower-bound{
         border-bottom: 1px solid #D4EAFF;
     }
 
-    .name p{
+    .advantages__name p{
         font-family: Arial;
         font-style: normal;
         font-weight: normal;
@@ -563,20 +564,20 @@ li img{
         line-height: 20px;
     }
 
-    .name img{
+    .advantages__name img{
         vertical-align: middle;
     }
 
-    .container-price{
+    .advantages__name_price{
         height: 165px;
         border-bottom: none;
     }
 
-    .three .container-price{
+    .container-pc__rate_m .container-price{
         height: 188px;
     }
 
-    .name .full-price{
+    .advantages__name .advantages__full-price{
         font-family: Proxima Nova Condensed Regular , sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -584,7 +585,7 @@ li img{
         line-height: 22px;
     }
     
-    .name .price-month{
+    .advantages__name .advantages__price-month{
         font-family: Proxima Nova Condensed Regular , sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -592,28 +593,27 @@ li img{
         line-height: 22px;
     }
     
-   .services:nth-child(2) .name .full-price{
+   .container-pc__rate_xs .advantages__name .advantages__full-price{
        margin-bottom: 20px;
    }
    
-    .services:nth-child(3) button{
+    .container-pc__rate_m button{
         background: #E8178A;
         color: white;
-        margin-bottom: 25px;
     }
 
-   .individual{
+   .block-rate__item_individual{
        width: 930px;
        flex-direction: row;
        justify-content: space-between;
        box-sizing: border-box;
    }
     
-    .individual-info{
-       width: 457px;
+    .block-rate__info-individual{
+       width: 463px;
     }
 
-    .individual-button{
+    .block-rate__button_individual{
         align-self: flex-start;
         margin-top: 0;
     }
