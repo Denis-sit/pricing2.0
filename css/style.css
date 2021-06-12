@@ -56,6 +56,10 @@ body{
     background: linear-gradient(180deg, #D3F1FF -21.51%, rgba(236, 242, 255, 0) 79.85%);
     background-repeat: no-repeat;
 } 
+.mobile-version{
+    margin-top: 126px;
+    padding-top: 63px;
+}
 
 h2 {
     font-family: Proxima Nova Condensed ExBlack , sans-serif;
@@ -64,6 +68,21 @@ h2 {
     font-size: 32px;
     line-height: 34px;
     text-align: center;
+}
+
+.advice-block__tablet-title{
+    display: none;
+}
+
+.advice-block__text{
+    display: none;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;  
+    margin-top: 24px;
 }
 
 .advice-block__nav{
@@ -163,8 +182,13 @@ h2 {
 }
 
 .survey-block__text{
-    line-height: 21px;
     margin-top: 16px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
 }
 
 .survey-block__img {
@@ -413,6 +437,18 @@ li img{
 /* Конец стилей мобильной версии */
 
 @media screen and (min-width:510px){
+    .advice-block__mob-title{
+        display: none;
+    }
+    
+    .advice-block__tablet-title{
+        display: block;
+    }
+    
+    .advice-block__text{
+        display: block;
+    }
+
     .block-rate__main-info{
         display: flex;
         justify-content: space-between;
@@ -452,6 +488,112 @@ li img{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .advice-block__nav{
+        height: 200px;
+    }
+
+    .advice-block__nav-button{
+        height: 138px;
+        border-radius: 50%;
+        font-family: Proxima Nova Condensed Bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 19px;
+        border: 2px solid #C5E0FF;
+    }
+    
+    .advice-block__nav-button_end{
+        align-self: flex-end;
+    }
+
+    .advice-block__nav-button_center{
+        align-self: center;
+    }
+    
+    .advice-block__nav-button:active{
+        background: #E9F6FF;
+        color: #E8178A;
+    }
+ 
+    .advice-block__slider{
+        width: 1000px;
+    }
+
+    .advice-block__text_question{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        padding: 0 30% 0 30%;
+    }
+
+    .survey-block__text{
+        padding: 0 15% 0 15%;
+    }
+    
+    .survey-block__wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    dl{
+        margin: 0;
+    }
+   
+    .block-advice{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 160px;
+    }
+
+    .block-advice__center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 1000px;
+    }
+
+    .block-advice__wrapper{
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        margin-top: 60px;
+        width: 94%;
+        column-gap: 60px;
+        row-gap: 55px;
+    }
+
+    .block-advice__cards{
+        height: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .block-advice__cards p{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .block-rate__button_red{
+        width: 187px;
+        margin-top: 57px;
+    }
+
+    .price-title{
+        margin-top: 150px;
     }
 
     .center{
