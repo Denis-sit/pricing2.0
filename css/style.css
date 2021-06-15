@@ -499,9 +499,10 @@ li img{
         height: 200px;
         background: url("../img/star-rotate.svg") no-repeat;
         background-size: 7%;
-        background-position: 80% -4px;
+        background-position: 80% 10px;
         width: 1000px;
-        padding-top: 5px;
+        padding-top: 20px;
+        margin: 0 auto;
     }
 
     .advice-block__wrapper{
