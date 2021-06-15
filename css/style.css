@@ -53,8 +53,13 @@
 /* стили для мобильной версии */
 
 body{
-    background: linear-gradient(180deg, #D3F1FF -21.51%, rgba(236, 242, 255, 0) 79.85%);
+    background: url("../img/fon-white-m.svg"),
+                url("../img/fon-white-m.svg"),
+                url("../img/fon-white-m.svg"),
+                linear-gradient(180deg, #D3F1FF -21.51%, rgba(236, 242, 255, 0) 79.85%);;
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 12px , 0 24px, 0 0px, 0 0;
 } 
 .mobile-version{
     margin-top: 126px;
