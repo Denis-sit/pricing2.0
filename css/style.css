@@ -58,7 +58,6 @@ body{
 } 
 .mobile-version{
     margin-top: 126px;
-    padding-top: 63px;
 }
 
 h2 {
@@ -492,6 +491,17 @@ li img{
 
     .advice-block__nav{
         height: 200px;
+        margin: 0;
+    }
+
+    .advice-block__wrapper{
+        background: url("../img/fon-pc-white.svg"),
+                    url("../img/fon-pc-white.svg"),
+                    url("../img/fon-pc-white.svg"),
+                    linear-gradient(180deg, #D3F1FF -21.51%, rgba(236, 242, 255, 0) 50.03%);
+        background-repeat: no-repeat;
+        background-size:100%,100%, 100%, 100%;
+        background-position: 0 0, 0 29px, 0 58px , 0 0;
     }
 
     .advice-block__nav-button{
@@ -504,7 +514,14 @@ li img{
         line-height: 19px;
         border: 2px solid #C5E0FF;
     }
-    
+
+    .advice-block__nav{
+        background: url("../img/star-rotate.svg") no-repeat;
+        background-size: 7%;
+        background-position: 768px 19px;
+        padding-top: 30px;
+    }
+
     .advice-block__nav-button_end{
         align-self: flex-end;
     }
