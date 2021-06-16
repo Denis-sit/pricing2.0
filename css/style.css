@@ -389,9 +389,9 @@ ul{
     align-items: center;
     justify-content: start;
     background-color: #290A54;
-    background-image:  url("../img/hh.svg"),url("../img/star.svg");
+    background-image:  url("../img/star.svg");
     background-repeat: no-repeat;
-    background-position: 172px 372px , 50px 369px;
+    background-position: 50px bottom;
     height: 506px;
 }
 
@@ -490,11 +490,12 @@ ul{
     
     header{
         width: 100%;
-        background: url("../img/header-fon.svg"),
+        background: url("../img/star.svg"),
+                    url("../img/header-fon.svg"),
                     linear-gradient(180deg, #C2F6FF 0%, #D9E3FD 100%), #F9FBFF;
         background-repeat: no-repeat;
         padding-top: 16px;
-        background-position: center bottom;
+        background-position: 100px bottom, center bottom, 0 0;
         padding-bottom: 405px;
     }
 
@@ -738,8 +739,6 @@ ul{
         border: 2px solid #C5E0FF;
         margin-left: 20px;
     }
-
-    
 
     .advice-block__nav-button_end{
         align-self: flex-end;
