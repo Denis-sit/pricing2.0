@@ -1007,4 +1007,94 @@ ul{
         margin-top: 0;
     }
 
+    .stages-block{
+        margin-top: 140px;
+    }
+
+    .stages-block__text{
+        width: 730px;
+        margin: 24px auto 0 auto;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .stades-block__wrapper{
+        position: relative;
+         height: 535px;
+         width: 100%;
+         margin: 50px auto 0 auto;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         background: url("../img/stages-blue-fon.svg");
+         background-repeat: no-repeat;
+         background-position: left 0 bottom 0;
+         background-size: 100% 35%;
+    }
+
+    .stages-block__list{
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        width: 1000px;
+        height: 455px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        background: url("../img/stages-img-fon.svg"), 
+                    url("../img/linear-stages.svg");
+        background-repeat: no-repeat;
+        background-position: 651px -24px, 0px 19px;
+        background-size: 38%, 91%;
+        z-index: -1;
+    }
+    .stages-block__item{
+        width: 180px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .stages-block__num{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #AAD5FB;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background: white;
+    }
+
+    .stages-block__num p{
+        font-family: Proxima Nova Condensed Regular, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 22px;
+        text-align: center;
+        color: #AAD5FB;
+    }
+    
+    .stages-block__item:first-child{
+        align-self: flex-start;
+    }
+
+    .stages-block__item:nth-child(2){
+        align-self: center;
+        margin-bottom: 117px;
+        margin-left: 33px;
+    }
+
+    .stages-block__item:last-child{
+        align-self: flex-start;
+    }
 }    
