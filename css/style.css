@@ -1086,6 +1086,7 @@ ul{
     
     .stages-block__item:first-child{
         align-self: flex-start;
+        margin-left: 95px;
     }
 
     .stages-block__item:nth-child(2){
