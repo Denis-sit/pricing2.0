@@ -1055,7 +1055,7 @@ ul{
         z-index: -1;
     }
     .stages-block__item{
-        width: 180px;
+        width: 176px;
         height: 140px;
         display: flex;
         flex-direction: column;
@@ -1084,9 +1084,9 @@ ul{
         color: #AAD5FB;
     }
     
-    .stages-block__item:first-child{
+    .stages-block__item:first-child {
         align-self: flex-start;
-        margin-left: 95px;
+        margin-left: 100px;
     }
 
     .stages-block__item:nth-child(2){
