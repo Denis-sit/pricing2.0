@@ -1196,8 +1196,12 @@ ul{
         align-self: flex-end;
     }
 
-    .hr-5{
+    .hr-4{
         align-self: flex-end;
+    }
+
+    .hr-5{
+        align-self: flex-start;
     } 
 
     .hr-1::after, .hr-2::after, .hr-3::after,
