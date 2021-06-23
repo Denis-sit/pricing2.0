@@ -1380,5 +1380,20 @@ ul{
     }
     .footer{
         margin-top: 90px;
+        background: #212122;
+    }
+
+    .footer-wrapper{
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .footer-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-nav ul{
+        margin: 0;
     }
 }    
