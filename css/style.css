@@ -568,7 +568,7 @@ ul{
     }
     
     h1{
-        font-family: Proxima Nova Condensed ExBlack;
+        font-family: Proxima Nova Condensed ExBlack, sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 56px;
@@ -1097,5 +1097,215 @@ ul{
 
     .stages-block__item:last-child{
         align-self: flex-start;
+    }
+
+    .block-specialists{
+        background: linear-gradient(180deg, #D3F1FF 0.64%, rgba(236, 242, 255, 0) 108.8%);
+    }
+
+    .block-specialists{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    .block-specialists__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .block-specialists__img{
+        margin-bottom: 8px;
+    }
+
+    .block-specialists__wrapper img{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .block-specialists__group{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block-specialists__item{
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+        height: 270px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .hr-1::before, .hr-2::before, .hr-3::before,
+    .hr-4::before, .hr-5::before{
+        content: "";
+        padding: 10px 15px;
+        position: absolute;
+        background: white;
+        border-radius: 26px;
+        box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .hr-1::before{
+        content: "Насколько вы довольны нашим ДМС?";
+        top: -59px;
+        right: 135px;
+    }
+
+    .hr-2::before{
+        content: "Поделитесь впечатлениями после интервью?";
+        top: 5px;
+        left: 41px;
+        width: 233px;
+        text-align: left;
+    }
+
+    .hr-3::before{
+        content: "Кто будет участвовать в тренинге?";
+        bottom: 48px;
+        left: 41px;
+    }
+
+    .hr-4::before{
+        content: "Выбираем тему вечеринки!";
+        top: 27px;
+        right: 38px;
+    }
+
+    .hr-5::before{
+        content: "Насколько вам комфортно работать в hh?";
+        bottom: 48px;
+        right: 38px;
+    }
+
+    .hr-3{
+        align-self: flex-end;
+    }
+
+    .hr-5{
+        align-self: flex-end;
+    } 
+
+    .hr-1::after, .hr-2::after, .hr-3::after,
+    .hr-4::after, .hr-5::after{
+        content: "";
+        width: 17px;
+        height: 17px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .hr-1::after{
+        top: -21px;
+        right: 393px;
+    }
+
+    .hr-2::after{
+        top: 69px;
+    }
+
+    .hr-3::after{
+        bottom: 87px;
+        left: 80px;
+    }
+
+    .hr-4::after{
+        top: 65px;
+        right: 73px;
+    }
+
+    .hr-5::after{
+        bottom: 86px;
+        right: 73px;
+    }
+
+    .block-specialists__text{
+        margin: 45px 105px;
+    }
+
+    .block-specialists__title{
+        font-family: Proxima Nova Condensed ExBlack, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 500px;
+        margin-bottom: 24px;
+    }
+
+    .block-specialists__info{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        width: 470px;
+    }
+
+    .block-specialists__cards-list{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .block-specialists__card{
+        position: relative;
+        width: 450px;
+        height: 301px;
+        padding: 32px 45px 0 34px;
+        background: white;
+    }
+
+    .block-specialists__card:first-child{
+        margin-right: 30px;
+    }
+    
+    .block-specialists__card img{
+        border-radius: 50%;
+        position: absolute;
+        top: -23px;
+        right: 36px;
+    }
+
+    .block-specialists__name{
+        font-family: Proxima Nova Condensed Bold,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .block-specialists__post{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #999999;
+    }
+
+    .block-specialists__comment{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 27px;
     }
 }    
