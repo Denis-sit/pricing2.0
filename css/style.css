@@ -1308,4 +1308,39 @@ ul{
         line-height: 21px;
         margin-top: 27px;
     }
+
+    .designer{
+        width: 100%;
+        background-image: none;
+        height: auto;
+        padding-bottom: 103px;
+        background: url("../img/desinger-fon-pc.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    .designer h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .designer p{
+        width: 440px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .designer__button{
+        flex-direction: row;
+    }
+
+    .designer__button__item_to-try{
+        width: 198px;
+        height: 48px;
+        margin-right: 20px;
+    }
+
+    .designer__button__item_demo{
+        margin-top: 0;
+        height: 48px;
+    }
 }    
