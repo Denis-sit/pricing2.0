@@ -1343,4 +1343,38 @@ ul{
         margin-top: 0;
         height: 48px;
     }
+
+    .connection{
+        margin-top: 70px;
+    }
+
+    .connection__title{
+        font-size: 36px;
+        line-height: 33px;
+    }
+
+    .connection__text{
+        width: 700px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 24px auto 0 auto;
+    }
+
+    .connection__email{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 26px;
+        color: #2998FF;
+        margin: 30px auto 0 auto;
+        text-align: center;
+    }
+    .footer{
+        margin-top: 90px;
+    }
 }    
