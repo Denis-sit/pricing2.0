@@ -1189,8 +1189,10 @@ ul{
 
     .hr-5::before{
         content: "Насколько вам комфортно работать в hh?";
-        bottom: 48px;
+        bottom: 21px;
         right: 38px;
+        width: 233px;
+        text-align: left;
     }
 
     .hr-3{
@@ -1267,6 +1269,7 @@ ul{
     .block-specialists__cards-list{
         display: flex;
         justify-content: center;
+        margin-top: 50px;
     }
     
     .block-specialists__card{
@@ -1370,15 +1373,20 @@ ul{
     }
 
     .connection__email{
+        margin: 30px auto 0 auto;
+        text-align: center;
+    }
+    
+    .connection__email a{
+        text-decoration: none;
         font-family: Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 26px;
         color: #2998FF;
-        margin: 30px auto 0 auto;
-        text-align: center;
-    }
+    } 
+
     .footer{
         margin-top: 90px;
         background: #212122;
