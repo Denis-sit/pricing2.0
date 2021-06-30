@@ -1270,7 +1270,7 @@ ul{
     
     .block-specialists__card{
         position: relative;
-        width: 450px;
+        width: 350px;
         height: 301px;
         padding: 32px 45px 0 34px;
         background: white;
@@ -1381,6 +1381,7 @@ ul{
     .footer{
         margin-top: 90px;
         background: #212122;
+        padding-top: 40px;
     }
 
     .footer-wrapper{
@@ -1391,9 +1392,79 @@ ul{
     .footer-nav{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     .footer-nav ul{
         margin: 0;
+    }
+
+    .footer-nav__list a{
+        text-decoration: none;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: #F9F9F9;
+    }
+
+    .footer-social{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #666666;
+        padding: 34px 0 44px 0;
+    }
+
+    .footer-social p{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: #999999;
+    } 
+    
+    .footer-social__item{
+        
+        display: flex;
+    }
+
+    .footer-social__item a{
+        margin-right: 15px;
+    }
+
+    .footer-social__item a:last-child{
+        margin-right: 0;
+    }
+
+    .social{
+        width: 37px;
+        height: 37px;
+        background:url("../img/social.svg") no-repeat ;
+    }
+
+    .vk{
+        background-position: 0px;
+    }
+
+    .facebook{
+        background-position: -50px;
+    }
+    
+    .ok{
+        background-position: -100px;
+    }
+
+    .twiter{
+        background-position: -150px;
+    }
+
+    .inst{
+        background-position: -200px;
+    }
+
+    .telegram{
+        background-position: -250px;
     }
 }    
