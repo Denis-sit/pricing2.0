@@ -1037,7 +1037,7 @@ ul{
          align-items: flex-start;
          background: url("../img/stages-blue-fon.svg");
          background-repeat: no-repeat;
-         background-position: left 0 bottom 0;
+         background-position: left 0 bottom -1px;
          background-size: 100% 35%;
     }
 
