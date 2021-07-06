@@ -711,9 +711,6 @@ ul{
     .advice-block__nav{
         justify-content: center;
         height: 200px;
-        background: url("../img/star-rotate.svg") no-repeat;
-        background-size: 7%;
-        background-position: 80% 10px;
         width: 1000px;
         padding-top: 20px;
         margin: 0 auto;
@@ -731,7 +728,24 @@ ul{
         width: 100%;
     }
 
+    .advice-block__wrapper-button{
+        margin-left: 20px;
+        position: relative;
+    }
+
+    .advice-block__wrapper-button::before{
+        content: "";
+        position: absolute;
+        width: 69px;
+        height: 69px;
+        background: url("../img/star-rotate.svg") no-repeat;
+        background-size: contain;
+        right: 0;
+        top: 12px;
+    }
+
     .advice-block__nav-button{
+        position: relative;
         height: 138px;
         border-radius: 50%;
         font-family: Proxima Nova Condensed Bold, sans-serif;
@@ -740,7 +754,8 @@ ul{
         font-size: 18px;
         line-height: 19px;
         border: 2px solid #C5E0FF;
-        margin-left: 20px;
+        margin: 0;
+        z-index: 1;
     }
 
     .advice-block__nav-button_end{
