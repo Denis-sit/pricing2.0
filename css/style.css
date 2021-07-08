@@ -114,11 +114,6 @@ h2 {
     cursor: pointer;
 }
 
-.advice-block__nav-button:active{
-    color: white;
-    background: #E8178A;
-}
-
 .advice-block__text_question,
 .system-surveys{
     font-family: Arial;
@@ -714,6 +709,7 @@ ul{
         width: 1000px;
         padding-top: 20px;
         margin: 0 auto;
+        margin-top: 58px;
     }
 
     .advice-block__wrapper{
@@ -733,6 +729,11 @@ ul{
         position: relative;
     }
 
+    .show{
+        background: #E9F6FF;
+        color: #E8178A;
+    }
+
     .advice-block__wrapper-button::before{
         content: "";
         position: absolute;
@@ -742,6 +743,13 @@ ul{
         background-size: contain;
         right: 0;
         top: 12px;
+        transition: all 0.5s ease-out;
+    }
+
+    .advice-block__wrapper-button.click::before{
+        content: '';
+        top: -44px;
+        transition: all 0.5s ease-out;
     }
 
     .advice-block__nav-button{
@@ -764,11 +772,6 @@ ul{
 
     .advice-block__nav-button_center{
         align-self: center;
-    }
-    
-    .advice-block__nav-button:active{
-        background: #E9F6FF;
-        color: #E8178A;
     }
  
     .advice-block__slider{
