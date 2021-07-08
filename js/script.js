@@ -6,14 +6,23 @@ window.addEventListener('DOMContentLoaded', () =>{
               element = pc.querySelectorAll('.advice-block__wrapper-button'),
               parentBlock = pc.querySelector('.advice-block__nav');
               
-           
+        function activeButtonByDefault(){
+            button.forEach((btns, i) =>{
+                if(btns.classList.contains('show')){
+                    element[i].classList.add('click');
+                }
+            });
+        }
+              
+        activeButtonByDefault();
+
          parentBlock.addEventListener('click', (e) =>{
              const target = e.target;
              if(target && target.classList.contains('advice-block__nav-button')){
                  button.forEach((btn, i ) =>{
                      if(btn === target){
-                         btn.classList.toggle('show');
-                         element[i].classList.toggle('click');
+                         btn.classList.add('show');
+                         element[i].classList.add('click');
                      }
                      else{
                          btn.classList.remove('show');
@@ -25,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () =>{
             
     };
 
+    
     clickButton();
 
 })
