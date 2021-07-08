@@ -127,13 +127,14 @@ h2 {
 
 .advice-block__slider{
     overflow: hidden;
+    height: 300px;
+    position: relative;
 }
 
 .advice-block__tape-slider{
-     width: 1500px;
      margin-top: 16px;
      display: flex;
-     position: relative;
+     position: absolute;
 }
 
 .advice-block__slider__card{
@@ -149,6 +150,44 @@ h2 {
     margin-left: 20px;
     padding: 23px 10px 19px 23px;
 }
+
+.slider-button{
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    background:  url("../img/slider-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    border: none;
+    margin-left: 20px;
+}
+ 
+.card-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.status-on{
+    display: inline-block;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #FDE5A6;
+    border-radius: 6px;
+    height: 10px;
+    padding: 5px;
+}
+
+.status-off{
+    display: none;
+}
+
 
 .advice-block__slider__card-title{
     font-family: Arial;
@@ -775,7 +814,9 @@ ul{
     }
  
     .advice-block__slider{
-        width: 1000px;
+        height: 300px;
+        position: relative;
+        margin-top: 38px;
     }
 
     .advice-block__text_question{

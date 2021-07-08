@@ -33,8 +33,15 @@ window.addEventListener('DOMContentLoaded', () =>{
          });
             
     };
-
-    
     clickButton();
 
+    function displayingTheSectionStatus(){     
+        const status= document.querySelectorAll('[data-on]');
+        
+        status.forEach(item =>{
+            item.classList.add('status-on');
+            item.classList.remove('status-off');
+        })
+    };
+    displayingTheSectionStatus();
 })
