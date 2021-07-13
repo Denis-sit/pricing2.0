@@ -135,6 +135,8 @@ h2 {
      margin-top: 16px;
      display: flex;
      position: absolute;
+     left: 50%;
+     transition: all 1s ease-out;
 }
 
 .advice-block__slider__card{
@@ -154,7 +156,6 @@ h2 {
 .slider-button{
     width: 36px;
     height: 36px;
-    background-color: transparent;
     background:  url("../img/slider-btn.svg");
     background-repeat: no-repeat;
     background-position: center;
