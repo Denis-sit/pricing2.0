@@ -2,11 +2,16 @@ window.onload = () =>{
    
     function clickButton(){
         const pc = document.querySelector('.pc-version'),
+              mb = document.querySelector('.mobile-version'),
               button = pc.querySelectorAll('.advice-block__nav-button'),
+              buttonMb = mb.querySelectorAll('.advice-block__nav-button'),
               element = pc.querySelectorAll('.advice-block__wrapper-button'),
               parentBlock = pc.querySelector('.advice-block__nav'),
-              elem = document.getElementById('slider')
-              sliderTitle = pc.querySelector('.advice-block__text_question');
+              parentBlockMb = mb.querySelector('.advice-block__nav'),
+              elem = document.getElementById('slider'),
+              elemMb = mb.querySelector('.advice-block__tape-slider'),
+              sliderTitle = pc.querySelector('.advice-block__text_question'),
+              sliderTitleMb = mb.querySelector('.advice-block__text_question');
         let arrOffset = [ 110, 430, 730, 1100, 1700, 3800],
             arrTitle = ['Как стать популярным работодателем?',
                         'Как получать больше откликов?',
@@ -27,6 +32,16 @@ window.onload = () =>{
               
         activeButtonByDefault();
 
+        function activeButtonByDefaultMb(){
+            button.forEach((btns, i) =>{
+                if(btns.classList.contains('mb-show')){
+                    elem.style.left = offset - arrOffset[4] + 'px';
+                }
+            });
+        }
+              
+        activeButtonByDefaultMb();
+
         parentBlock.addEventListener('click', (e) =>{
             const target = e.target;
             if(target && target.classList.contains('advice-block__nav-button')){
@@ -40,6 +55,22 @@ window.onload = () =>{
                     else{
                         btn.classList.remove('show');
                         element[i].classList.remove('click');
+                    }
+                });
+            }
+        });
+
+        parentBlockMb.addEventListener('click', (e) =>{
+            const target = e.target;
+            if(target && target.classList.contains('advice-block__nav-button')){
+                buttonMb.forEach((btn, i ) =>{
+                    if(btn === target){
+                        btn.classList.add('mb-show');
+                        elemMb.style.left = offset - arrOffset[i] + 'px';
+                        sliderTitleMb.textContent = arrTitle[i];
+                    }
+                    else{
+                        btn.classList.remove('mb-show');
                     }
                 });
             }

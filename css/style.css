@@ -114,6 +114,11 @@ h2 {
     cursor: pointer;
 }
 
+.mb-show{
+    color: white;
+    background: #E8178A;
+}
+
 .advice-block__text_question,
 .system-surveys{
     font-family: Arial;
