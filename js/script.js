@@ -9,7 +9,7 @@ window.onload = () =>{
               parentBlock = pc.querySelector('.advice-block__nav'),
               parentBlockMb = mb.querySelector('.advice-block__nav'),
               elem = document.getElementById('slider'),
-              elemMb = mb.querySelector('.advice-block__tape-slider'),
+              elemMb = document.getElementById('slider-mb'),
               sliderTitle = pc.querySelector('.advice-block__text_question'),
               sliderTitleMb = mb.querySelector('.advice-block__text_question');
         let arrOffset = [ 110, 430, 730, 1100, 1700, 3800],
@@ -20,7 +20,9 @@ window.onload = () =>{
                         'Как сделать так, чтобы сотрудники работали долго и счастливо?',
                         'Как сделать так, чтобы сотрудники не уходили?'],
             offset = parseInt(window.getComputedStyle(elem).getPropertyValue('left'));
+            offsetMb = parseInt(window.getComputedStyle(elemMb).getPropertyValue('left'));
               
+        
         function activeButtonByDefault(){
             button.forEach((btns, i) =>{
                 if(btns.classList.contains('show')){
@@ -33,9 +35,9 @@ window.onload = () =>{
         activeButtonByDefault();
 
         function activeButtonByDefaultMb(){
-            button.forEach((btns, i) =>{
+            buttonMb.forEach(btns =>{
                 if(btns.classList.contains('mb-show')){
-                    elem.style.left = offset - arrOffset[4] + 'px';
+                    elemMb.style.left = offsetMb - arrOffset[4] + 'px';
                 }
             });
         }
@@ -66,7 +68,7 @@ window.onload = () =>{
                 buttonMb.forEach((btn, i ) =>{
                     if(btn === target){
                         btn.classList.add('mb-show');
-                        elemMb.style.left = offset - arrOffset[i] + 'px';
+                        elemMb.style.left = offsetMb - arrOffset[i] + 'px';
                         sliderTitleMb.textContent = arrTitle[i];
                     }
                     else{
