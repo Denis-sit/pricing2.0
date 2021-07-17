@@ -39,19 +39,6 @@ window.onload = () =>{
         };
     };
 
-    window.onresize = function(event){
-        for (let i = 0; i < buttonMb.length; i++) {
-            let btn = buttonMb[i];
-
-            if(btn.classList.contains('show')){
-                elemMb.style.left = 50 + '%';
-                setTimeout(() => {
-                    newOffsetMb = parseInt(window.getComputedStyle(elemMb).getPropertyValue('left'));
-                    elemMb.style.left =  newOffsetMb - arrOffset[i] + 'px';
-                }, 1000);
-            };
-        };
-    };
     
 
     function clickButton(){
