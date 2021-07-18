@@ -19,8 +19,9 @@ window.onload = () =>{
               'Как сделать так, чтобы сотрудники не уходили?'];
     let  offset = parseInt(window.getComputedStyle(elem).getPropertyValue('left'));
     offsetMb = parseInt(window.getComputedStyle(elemMb).getPropertyValue('left'));
-    let newOffset,
-        newOffsetMb;
+    let newOffset;
+    const card = pc.querySelectorAll('.wrapper__slider__card'),
+          cardMb = mb.querySelectorAll('.wrapper__slider__card');
     
     window.onresize = function(event){
         for (let i = 0; i < button.length; i++) {
@@ -30,9 +31,6 @@ window.onload = () =>{
                 elem.style.left = 50 + '%';
                 setTimeout(() => {
                     newOffset = parseInt(window.getComputedStyle(elem).getPropertyValue('left'));
-                    console.log('newOffset', newOffset)
-                    console.log('arrOffset[i]', arrOffset[i])
-                    console.log('b if', newOffset - arrOffset[i] + 'px');
                     elem.style.left = newOffset - arrOffset[i] + 'px';
                 }, 1000);
             };
@@ -47,6 +45,7 @@ window.onload = () =>{
                 if(btns.classList.contains('show')){
                     element[i].classList.add('click');
                     elem.style.left = offset - arrOffset[4] + 'px';
+                    card[i].classList.remove('advice-block__slider__card_opacity');
                 }
             });
         }
@@ -54,9 +53,10 @@ window.onload = () =>{
         activeButtonByDefault();
 
         function activeButtonByDefaultMb(){
-            buttonMb.forEach(btns =>{
+            buttonMb.forEach((btns, i) =>{
                 if(btns.classList.contains('mb-show')){
                     elemMb.style.left = offsetMb - arrOffset[4] + 'px';
+                    cardMb[i].classList.remove('advice-block__slider__card_opacity');
                 }
             });
         }
@@ -72,10 +72,12 @@ window.onload = () =>{
                         element[i].classList.add('click');
                         elem.style.left = offset - arrOffset[i] + 'px';
                         sliderTitle.textContent = arrTitle[i];
+                        card[i].classList.remove('advice-block__slider__card_opacity');
                     }
                     else{
                         btn.classList.remove('show');
                         element[i].classList.remove('click');
+                        card[i].classList.add('advice-block__slider__card_opacity');
                     }
                 });
             }
@@ -89,9 +91,11 @@ window.onload = () =>{
                         btn.classList.add('mb-show');
                         elemMb.style.left = offsetMb - arrOffset[i] + 'px';
                         sliderTitleMb.textContent = arrTitle[i];
+                        cardMb[i].classList.remove('advice-block__slider__card_opacity');
                     }
                     else{
                         btn.classList.remove('mb-show');
+                        cardMb[i].classList.add('advice-block__slider__card_opacity');
                     }
                 });
             }
@@ -111,7 +115,7 @@ window.onload = () =>{
     };
     displayingTheSectionStatus();
 
-    
+
     
     
      
