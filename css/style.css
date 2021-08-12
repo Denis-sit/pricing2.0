@@ -64,8 +64,8 @@ body{
 } 
 .mobile-version{
     margin-top: 126px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 h2 {
@@ -292,7 +292,7 @@ dd {
     padding: 30px 20px 30px 21px;
     border-radius: 8px;
     border: 1px solid #D4EAFF;
-    margin-bottom: 30px;
+    margin: 0 10px 30px 10px;
 }
 
 
